@@ -1,6 +1,7 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import urlparse, parse_qs
 
+
 hostName = 'localhost'
 serverPort = 8080
 
@@ -8,11 +9,11 @@ serverPort = 8080
 class MyServer(BaseHTTPRequestHandler):
 
     def __get_html_content(self):
-        html_file = 'index.html'
+        file_html = 'index.html'
         try:
-            with open(html_file, 'r', encoding='utf-8') as file:
-                html_text = file.read()
-                return html_text
+            with open(file_html, 'r', encoding='utf-8') as file:
+                html = file.read()
+                return html
         except FileNotFoundError:
             return 'Файл не найден'
 
