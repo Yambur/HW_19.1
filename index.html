@@ -268,7 +268,7 @@
 
         <main class="row">
             <div class="row text-center">
-                <div class="col-4">
+                <div class="col-5">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
                             <h4 class="my-0 fw-normal">Товар 1</h4>
@@ -281,7 +281,71 @@
                                 Email support,
                                 Help center access
                             </p>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            <button type="button" class="w-100 btn btn-lg btn-primary btn-success">Купить
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <input name="name" type="text" class="form-control" id="exampleInputEmail1"
+                                           placeholder="Имя"
+                                           aria-describedby="emailHelp">
+                                </div>
+                                <div class="row mt-5"></div>
+                                <div class="mb-3">
+                                    <input name="email" type="email" class="form-control" id="exampleInputPassword1"
+                                           placeholder="Email">
+                                </div>
+                                <div class="row mt-5"></div>
+                                <button type="submit" class="btn btn-lg btn-success form-control">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center">
+                <h2 class="card-title">
+                    FAQ
+                </h2>
+                <p class="d-inline-flex gap-2 d-md-flex justify-content-md-center">
+                    <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#multiCollapseExample1" aria-expanded="false"
+                            aria-controls="multiCollapseExample1">Как купить?
+                    </button>
+                    <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                            aria-controls="multiCollapseExample2">Как доставить?
+                    </button>
+                    <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#multiCollapseExample3" aria-expanded="false"
+                            aria-controls="multiCollapseExample3">Какая гарантия?
+                    </button>
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body">
+                                Взял и купил!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <div class="card card-body">
+                                Взял и доставил..ну или мы доставим Вам, по указанному адресу. Но лучше самовывоз
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample3">
+                            <div class="card card-body">
+                                Гарантийный срок - не предусмотрен..увы
+                            </div>
                         </div>
                     </div>
                 </div>
